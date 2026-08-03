@@ -25,7 +25,7 @@
 html,body{height:100%}
 body{background:linear-gradient(180deg,#0d1512 0%,#0b120f 40%,#0a0f0c 100%);color:var(--parch);font-family:'Alegreya',serif;font-size:16.5px;line-height:1.5;overflow-x:hidden;-webkit-tap-highlight-color:transparent}
 body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:40;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E")}
-#vig{position:fixed;inset:0;pointer-events:none;z-index:30;box-shadow:inset 0 0 140px 40px rgba(3,7,5,.92)}
+#vig{position:fixed;inset:0;pointer-events:none;z-index:30;box-shadow:inset 0 0 100px 18px rgba(3,7,5,.55)}
 .brume{position:fixed;inset:-20%;pointer-events:none;z-index:0;opacity:.16;filter:blur(46px)}
 .b1{background:radial-gradient(40% 30% at 30% 40%,#5a7263,transparent 70%),radial-gradient(35% 25% at 75% 62%,#46604f,transparent 70%);animation:derive 46s linear infinite alternate}
 .b2{background:radial-gradient(32% 26% at 60% 25%,#6b6a4a,transparent 70%),radial-gradient(30% 24% at 20% 75%,#3f5a52,transparent 70%);animation:derive 67s linear infinite alternate-reverse}
@@ -97,9 +97,9 @@ h2{font-family:'Cinzel';font-weight:700;font-size:1.35rem;color:#e8d5a0;letter-s
 .carte-tete span{font-size:.72rem;color:#9a8348;letter-spacing:.15em}
 .carte{position:relative;height:clamp(440px,72vh,660px);margin:.2rem 0 .8rem;border-radius:14px;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;border:2px solid #5a4423;background:#170f08;scrollbar-width:thin;scrollbar-color:#8a6d2f transparent;box-shadow:inset 0 0 0 6px rgba(231,214,173,.10),0 18px 40px -16px #000}
 .carte::-webkit-scrollbar{width:7px}.carte::-webkit-scrollbar-thumb{background:#8a6d2f;border-radius:4px}
-.carte::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:3;border-radius:14px;background:radial-gradient(135% 90% at 50% 50%,transparent 58%,rgba(20,14,7,.5)),linear-gradient(180deg,rgba(20,14,7,.55),transparent 7%,transparent 93%,rgba(20,14,7,.55))}
+.carte::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:3;border-radius:14px;background:radial-gradient(135% 90% at 50% 50%,transparent 58%,rgba(20,14,7,.32)),linear-gradient(180deg,rgba(20,14,7,.38),transparent 7%,transparent 93%,rgba(20,14,7,.38))}
 .carte-inner{position:relative;width:100%;overflow:hidden;background-color:#e6d3a7;background-image:radial-gradient(120px 70px at 22% 14%,rgba(255,248,222,.55),transparent 70%),radial-gradient(160px 90px at 78% 30%,rgba(255,248,222,.40),transparent 72%),radial-gradient(90px 60px at 40% 55%,rgba(120,86,40,.16),transparent 70%),radial-gradient(140px 80px at 70% 70%,rgba(120,86,40,.14),transparent 72%),linear-gradient(180deg,#efe0bb 0%,#e6d3a7 50%,#d8c08f 100%);box-shadow:inset 0 0 0 2px rgba(90,68,35,.45),inset 0 0 0 7px rgba(239,224,187,.40),inset 0 0 90px rgba(80,55,20,.45)}
-.carte-inner::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background-image:url("assets/map_velen.jpg");background-size:cover;background-position:center;opacity:.55;mix-blend-mode:multiply}
+.carte-inner::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background-image:url("assets/map_velen.jpg");background-size:100% 100%;background-position:center;opacity:.55;mix-blend-mode:multiply}
 .carte-inner::after{content:"";position:absolute;inset:-20%;z-index:0;pointer-events:none;opacity:.13;background-image:radial-gradient(40% 30% at 30% 40%,rgba(225,232,210,.9),transparent 70%),radial-gradient(35% 26% at 72% 64%,rgba(210,222,200,.8),transparent 72%);background-size:200% 200%,200% 200%;mix-blend-mode:screen;animation:brumeCarte 38s ease-in-out infinite alternate}
 @keyframes brumeCarte{from{background-position:10% 30%,90% 70%}to{background-position:40% 55%,60% 40%}}
 #lignes{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none}
@@ -269,10 +269,10 @@ body.in-game #langbar{display:none}
 <body>
 <script>window.addEventListener('error',function(e){window.__ERR=(e.message||'erreur inconnue');var p=document.getElementById('errParch');if(p){p.style.zIndex='120';p.hidden=false;p.querySelector('span').textContent='Le moteur a trébuché : '+window.__ERR;}});</script>
 <div id="splash"><div class="sk">
-  <div class="pl"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M12 4L15.2 2.2 15.7 5.5 17.5 6.7 19.7 8.5 17.7 9.7 20.3 11.5 17.9 12.7 19.5 14.7 16.5 16.7 12 21 7.5 16.7 4.5 14.7 6.1 12.7 3.7 11.5 6.3 9.7 4.3 8.5 6.5 6.7 8.3 5.5 8.8 2.2Z M14.7 3.3 15.1 5.1 13.7 4.9Z M9.3 3.3 8.9 5.1 10.3 4.9Z M13.3 7.7Q14.7 7 16.1 7.9 14.7 7.7 13.3 8.3Z M10.7 7.7Q9.3 7 7.9 7.9 9.3 7.7 10.7 8.3Z M13.5 9.5Q14.7 8.5 15.9 9.5 14.7 10.3 13.5 9.5Z M10.5 9.5Q9.3 8.5 8.1 9.5 9.3 10.3 10.5 9.5Z M10.7 13.7Q12 13.3 13.3 13.7 12.9 15 12 15.4 11.1 15 10.7 13.7Z M10.9 16.3Q12 17.1 13.1 16.3 12 16.7 10.9 16.3Z"/></svg></div>
-  <h1>LA GRANDE ROUTE</h1>
-  <p>le continent s'éveille…</p>
-  <div class="bar"><i></i></div>
+<div class="pl"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M12 4L15.2 2.2 15.7 5.5 17.5 6.7 19.7 8.5 17.7 9.7 20.3 11.5 17.9 12.7 19.5 14.7 16.5 16.7 12 21 7.5 16.7 4.5 14.7 6.1 12.7 3.7 11.5 6.3 9.7 4.3 8.5 6.5 6.7 8.3 5.5 8.8 2.2Z M14.7 3.3 15.1 5.1 13.7 4.9Z M9.3 3.3 8.9 5.1 10.3 4.9Z M13.3 7.7Q14.7 7 16.1 7.9 14.7 7.7 13.3 8.3Z M10.7 7.7Q9.3 7 7.9 7.9 9.3 7.7 10.7 8.3Z M13.5 9.5Q14.7 8.5 15.9 9.5 14.7 10.3 13.5 9.5Z M10.5 9.5Q9.3 8.5 8.1 9.5 9.3 10.3 10.5 9.5Z M10.7 13.7Q12 13.3 13.3 13.7 12.9 15 12 15.4 11.1 15 10.7 13.7Z M10.9 16.3Q12 17.1 13.1 16.3 12 16.7 10.9 16.3Z"/></svg></div>
+<h1>LA GRANDE ROUTE</h1>
+<p>le continent s'éveille…</p>
+<div class="bar"><i></i></div>
 </div></div>
 <div id="langbar"><button id="lb_fr" onclick="setLang('fr')"><span class="flag">🇫🇷</span>FR</button><button id="lb_en" onclick="setLang('en')"><span class="flag">🇬🇧</span>EN</button></div>
 <div class="brume b1"></div><div class="brume b2"></div>
@@ -280,8 +280,8 @@ body.in-game #langbar{display:none}
 <div id="lucioles"></div>
 <div id="errParch" class="parch" hidden>📜 <span>Si ce parchemin persiste, le moteur a trébuché.</span></div>
 <main id="jeu">
-  <header id="hud" hidden></header>
-  <section id="ecran"></section>
+<header id="hud" hidden></header>
+<section id="ecran"></section>
 </main>
 <script src="src/ui/icons.js"></script>
 <script src="src/i18n.js"></script>
