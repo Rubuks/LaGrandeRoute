@@ -132,5 +132,13 @@ registerLocale('en',
   "ui.sac.reserve": "🏆 Relics in reserve",
   "ui.sac.beltFull": "(belt full — remove a relic first)",
   "ui.chips.rally": "📯 emboldened",
+  "ui.sac.close": "Close the pack",
+ "ui.best.title": "Bestiary",
+ "ui.best.empty": "This grimoire is still blank. Slay monsters to fill its pages.",
+ "ui.best.close": "Close the grimoire",
+ "ui.best.weak": "Weakness:",
+ "ui.best.none": "none",
+ "ui.best.atk": "Attack",
+ "ui.best.fly": "🪽 flies", 
 }
 );
