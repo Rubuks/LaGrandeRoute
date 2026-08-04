@@ -191,7 +191,7 @@ registerLocale('fr',
   "w.item.grappin.name": "Flèche-grappin",
   "w.item.grappin.desc": "Agrippe une créature volante et la cloue au sol. Au sol : étourdit 2 tours.",
   "w.itemlog.grappin.fly": "⛓️ Le grappin mord la chair — la bête pique vers le sol !",
-  "w.itemlog.grappin.ground": "⛓️ Le grappin se fiche dans le sol — la cible est immobilisée 2 tours !"
+  "w.itemlog.grappin.ground": "⛓️ Le grappin se fiche dans le sol — la cible est immobilisée 2 tours !", 
   "w.item.carreauArgent.name": "Carreau d’Argent",
   "w.item.carreauArgent.desc": "12 dégâts à la cible, touche le vol.",
   "w.item.carreauExplosif.name": "Carreau Explosif",
