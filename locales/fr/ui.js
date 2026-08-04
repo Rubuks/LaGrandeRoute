@@ -132,5 +132,13 @@ registerLocale('fr',
   "ui.sac.reserve": "🏆 Reliques en réserve",
   "ui.sac.beltFull": "(ceinture pleine — décroche une relique d’abord)",
   "ui.chips.rally": "📯 enhardi",
+  "ui.sac.close": "Fermer le sac",
+ "ui.best.title": "Bestiaire",
+ "ui.best.empty": "Ce grimoire est encore vierge. Abats des monstres pour remplir ses pages.",
+ "ui.best.close": "Fermer le grimoire",
+ "ui.best.weak": "Faiblesse :",
+ "ui.best.none": "aucune",
+ "ui.best.atk": "Attaque",
+ "ui.best.fly": "🪽 vole", 
 }
 );
