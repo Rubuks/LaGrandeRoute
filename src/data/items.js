@@ -28,7 +28,7 @@ gnome:{img:'v_mug',n:'w.item.gnome.name',em:"🥃",cls:"mercenaire",p:65,d:'w.it
 runeFoudre:{img:'v_rune',n:'w.item.runeFoudre.name',em:"🪨",cls:"mercenaire",p:70,d:'w.item.runeFoudre.desc',use(){C.rune=true;log(t('w.itemlog.runeFoudre.etch'));}},
 runePierre:{img:'v_rune',n:'w.item.runePierre.name',em:"🛡️",cls:"mercenaire",p:60,d:'w.item.runePierre.desc',use(){C.hst.bouclier+=20;log(t('w.itemlog.runePierre.pulse'));}},
 runeSang:{img:'v_rune',n:'w.item.runeSang.name',em:"🩸",cls:"mercenaire",p:75,d:'w.item.runeSang.desc',use(){C.hst.vampire=2;log(t('w.itemlog.runeSang.drink'));}},
-grappin:{img:'v_bolt',n:'w.item.grappin.name',em:"⛓️",cls:"mercenaire, eclaireuse",p:55,sfx:"crit",d:'w.item.grappin.desc',use(){
+grappin:{img:'v_bolt',n:'w.item.grappin.name',em:"⛓️",cls:"mercenaire",p:55,sfx:"crit",d:'w.item.grappin.desc',use(){
  const e=curFoe();
  if(!e||!e.vivant)return;
  if(e.vole){e.chute+=2;log(t('w.itemlog.grappin.fly'));}
