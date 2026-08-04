@@ -28,6 +28,12 @@ gnome:{img:'v_mug',n:'w.item.gnome.name',em:"🥃",cls:"mercenaire",p:65,d:'w.it
 runeFoudre:{img:'v_rune',n:'w.item.runeFoudre.name',em:"🪨",cls:"mercenaire",p:70,d:'w.item.runeFoudre.desc',use(){C.rune=true;log(t('w.itemlog.runeFoudre.etch'));}},
 runePierre:{img:'v_rune',n:'w.item.runePierre.name',em:"🛡️",cls:"mercenaire",p:60,d:'w.item.runePierre.desc',use(){C.hst.bouclier+=20;log(t('w.itemlog.runePierre.pulse'));}},
 runeSang:{img:'v_rune',n:'w.item.runeSang.name',em:"🩸",cls:"mercenaire",p:75,d:'w.item.runeSang.desc',use(){C.hst.vampire=2;log(t('w.itemlog.runeSang.drink'));}},
+grappin:{img:'v_bolt',n:'w.item.grappin.name',em:"⛓️",cls:"mercenaire",p:55,sfx:"crit",d:'w.item.grappin.desc',use(){
+ const e=curFoe();
+ if(!e||!e.vivant)return;
+ if(e.vole){e.chute+=2;log(t('w.itemlog.grappin.fly'));}
+ else{e.st.etourdi=2;log(t('w.itemlog.grappin.ground'));}
+}}, 
 carreauArgent:{img:'v_bolt',n:'w.item.carreauArgent.name',em:"🏹",cls:"eclaireuse",p:50,sfx:"crit",d:'w.item.carreauArgent.desc',use(){blesserEnnemi(12,null,'🏹 '+t('w.item.carreauArgent.name'),false,false);}},
 carreauExplosif:{img:'v_bomb',n:'w.item.carreauExplosif.name',em:"💥",cls:"eclaireuse",p:60,sfx:"crit",d:'w.item.carreauExplosif.desc',use(){blesserEnnemi(8,null,'💥 '+t('w.item.carreauExplosif.name'),false,false);if(!C||C.fini)return;const e=curFoe();if(e&&e.vivant&&e.vole){e.chute++;log(t('w.itemlog.carreauExplosif.fly'));}if(e&&e.vivant&&e.pvE>0&&Math.random()<.4){e.st.etourdi=1;log(t('w.itemlog.carreauExplosif.stun'));}}},
 carreauPoison:{img:'v_toxin',n:'w.item.carreauPoison.name',em:"☠️",cls:"eclaireuse",p:55,sfx:"signe",d:'w.item.carreauPoison.desc',use(){blesserEnnemi(6,null,'☠️ '+t('w.item.carreauPoison.name'),false,false);if(!C||C.fini)return;const e=curFoe();if(e&&e.vivant&&e.pvE>0){e.st.poison={d:4,n:3};log(t('w.itemlog.carreauPoison.curare'));}}},
