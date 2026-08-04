@@ -191,7 +191,7 @@ registerLocale('en',
   "w.item.grappin.name": "Grappling Bolt",
   "w.item.grappin.desc": "Grabs a flying creature and nails it to the ground. On ground targets: stuns 2 turns.",
   "w.itemlog.grappin.fly": "⛓️ The bolt bites flesh — the beast dives to the ground!",
-  "w.itemlog.grappin.ground": "⛓️ The bolt anchors into the earth — target immobilized for 2 turns!"
+  "w.itemlog.grappin.ground": "⛓️ The bolt anchors into the earth — target immobilized for 2 turns!", 
   "w.item.carreauArgent.name": "Silver Bolt",
   "w.item.carreauArgent.desc": "12 damage to the target, hits flyers.",
   "w.item.carreauExplosif.name": "Explosive Bolt",
