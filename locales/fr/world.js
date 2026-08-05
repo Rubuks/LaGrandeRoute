@@ -492,5 +492,9 @@ registerLocale('fr',
   "w.log.rally": "📯 {n} bat sa poitrine et hurle — la meute se rallie, enhardie !",
   "w.log.swoop": "🦅 {n} pique en serres et te soulève de terre — −{d} PV, étourdi !",
   "w.log.swoopLand": "🦅 Posé après sa serre, le griffon offre son poitrail — frappe, il est au sol !",
+  "w.foe.spectre.i3n": "Forme de brume",
+ "w.foe.foglet.i2n": "Forme de brume",
+ "w.log.intangible": "🌫️ {n} se fond dans la brume — intangible !",
+ "w.log.intangibleBreak": "✦ {n} est arraché à la brume — vulnérable !",
 }
 );
