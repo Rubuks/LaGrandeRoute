@@ -139,6 +139,7 @@ registerLocale('en',
  "ui.best.weak": "Weakness:",
  "ui.best.none": "none",
  "ui.best.atk": "Attack",
- "ui.best.fly": "🪽 flies", 
+ "ui.best.fly": "🪽 flies",
+ "ui.chips.intangible": "🌫️ incorporeal", 
 }
 );
