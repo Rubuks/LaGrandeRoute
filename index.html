@@ -263,6 +263,19 @@ body.in-game #langbar{display:none}
 .jauge .ico{width:.82em;height:.82em;vertical-align:0}
 .stat .ico{width:1.1em;height:1.1em;vertical-align:-.22em}
 @media (min-width:560px){body{font-size:17.5px}}
+/* --- Signes colorés + portraits agrandis --- */
+.signe.s-aard{--sc:#4aa3df}.signe.s-igni{--sc:#e0503a}.signe.s-quen{--sc:#e09a3a}.signe.s-yrden{--sc:#a06ae0}.signe.s-axii{--sc:#6fce6f}
+.signe:not(:disabled){border-color:var(--sc);color:var(--sc);box-shadow:0 0 12px -3px var(--sc),inset 0 0 10px -7px var(--sc)}
+.signe:not(:disabled) small{color:var(--sc)}
+.signe:disabled{opacity:.32;filter:grayscale(1);pointer-events:none}
+.foe .pw.bestiole{width:clamp(80px,23vw,116px);height:clamp(104px,30vw,150px)}
+.foe .pw.bestiole .fb{font-size:clamp(48px,14vw,72px)}
+.pw.bestiole{width:clamp(112px,32vw,158px);height:clamp(140px,40vw,198px)}
+.pw.bestiole .fb{font-size:clamp(68px,20vw,96px)}
+.pw.hem{width:46px;height:58px;border-radius:10px}
+.pw.hem .fb{font-size:1.7rem}
+.pw.med{width:38px;height:46px;border-radius:10px}
+.pw.med .fb{font-size:1.3rem}
 </style>
 </head>
 <body>
