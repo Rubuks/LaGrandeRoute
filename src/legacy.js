@@ -99,7 +99,7 @@ function aliveFoes(){return C.foes.filter(e=>e.vivant);}
 function curFoe(){return (C&&C.foes)?C.foes[C.cible]:null;}
 function recible(){if(!C)return;if(!C.foes[C.cible]||!C.foes[C.cible].vivant){const a=aliveFoes();if(a.length)C.cible=C.foes.indexOf(a[0]);}}
 function setCible(i){if(!C||C.fini)return;if(C.foes[i]&&C.foes[i].vivant){C.cible=i;sfx('clic');rCombat();}}
-const SPECIAL_FX={devour:1,rally:1,swoop:1, brume:1};
+const SPECIAL_FX={devour:1,rally:1,swoop:1,brume:1};
 function specialReady(foe){if(!foe.special)return false;switch(foe.special.fx){case 'devour':return foe.pvE<foe.pvEMax&&C.foes.some(a=>a.vivant&&a!==foe&&a.cat==='necrophage');case 'rally':return !foe.rallyUsed&&C.foes.some(a=>a.vivant&&a!==foe&&a.key==='nekkere');case 'swoop':return !!foe.vole&&!C.grabUsed;}return false;}
 function pickIntents(){C.foes.forEach(e=>{if(!e.vivant)return;const M=MONSTRES[e.key];if(e.special&&specialReady(e)&&Math.random()<0.7){e.intent={n:e.special.n,em:e.special.em,fx:e.special.fx,d:[0,0]};return;}const pool=e.boss?(e.vole?M.intsVol:M.intsSol):M.ints;e.intent=pick(pool);});}
 function execSpecial(foe){const fx=foe.intent.fx;
