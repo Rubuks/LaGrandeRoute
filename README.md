@@ -1,4 +1,4 @@
-# 🐺 La Grande Route — Acte I : Velen
+# La Grande Route — Acte I : Velen
 
 > *« On ne demande pas au sorceleur de tuer. On lui demande de partir sur la route, et de ne jamais revenir. »*  
 > — Journal d’un chasseur de primes
