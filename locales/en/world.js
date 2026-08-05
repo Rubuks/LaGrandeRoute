@@ -492,5 +492,9 @@ registerLocale('en',
   "w.log.rally": "📯 {n} beats its chest and howls — the pack rallies, emboldened!",
   "w.log.swoop": "🦅 {n} stoops in talons and lifts you off the ground — −{d} HP, dazed!",
   "w.log.swoopLand": "🦅 Grounded after its talons, the griffon bares its breast — strike, it is on the ground!",
+  "w.foe.spectre.i3n": "Mist form",
+ "w.foe.foglet.i2n": "Mist form",
+ "w.log.intangible": "🌫️ {n} melts into the mist — intangible!",
+ "w.log.intangibleBreak": "✦ {n} is torn from the mist — vulnerable!",
 }
 );
