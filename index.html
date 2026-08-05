@@ -69,15 +69,6 @@ h2{font-family:'Cinzel';font-weight:700;font-size:1.35rem;color:#e8d5a0;letter-s
 .titre{text-align:center;padding-top:3.2rem}
 .medaillon{width:92px;height:92px;margin:0 auto 1rem;border-radius:50%;display:grid;place-items:center;font-size:2.6rem;background:radial-gradient(circle at 34% 28%,#4a4038,#221c16 70%);border:2px solid #6b5a34;box-shadow:0 0 0 5px #17120c,0 0 34px rgba(201,162,75,.28),inset 0 2px 8px rgba(255,235,180,.2);animation:pouls 2.6s infinite}
 .medaillon .ico{width:1.5em;height:1.5em}
-.titre .acte{font-family:'Cinzel';font-size:.8rem;letter-spacing:.3em;color:#a58c4c;margin:.7rem 0 1.4rem;text-transform:uppercase}
-.lore{max-width:400px;margin:0 auto 1.6rem;transform:rotate(-.6deg)}
-.poteaux{position:relative;margin:1.6rem auto 2rem;width:min(320px,86%);padding:.4rem 0 1rem}
-.poteaux::before{content:"";position:absolute;left:50%;top:-6px;bottom:0;width:9px;transform:translateX(-50%);background:linear-gradient(180deg,#2c2113,#1a1309);border-radius:3px;z-index:0}
-.panne{display:block;position:relative;z-index:1;font-family:'Cinzel';font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;background:linear-gradient(180deg,#4a3820,#31240f);color:#d9c69a;border:1px solid #5f4a26;padding:.55rem 1.5rem;margin:.4rem 0;box-shadow:0 5px 12px rgba(0,0,0,.55);transition:.25s}
-.panne.droite{clip-path:polygon(0 0,88% 0,100% 50%,88% 100%,0 100%);transform:rotate(1.7deg);margin-left:14%}
-.panne.gauche{clip-path:polygon(12% 0,100% 0,100% 100%,12% 100%,0 50%);transform:rotate(-2.1deg);margin-right:14%;text-align:right}
-.panne:hover{transform:rotate(0) scale(1.04);color:#f2e2b2}
-.version{margin-top:1.6rem;font-size:.78rem;color:#6f6248}
 .classe{display:grid;grid-template-columns:auto 1fr;gap:.9rem;align-items:start;margin:1rem 0;padding:1rem;background:linear-gradient(160deg,#221a10,#150e07);border:1px solid #44351d;border-left:5px solid var(--c,#999);border-radius:8px;transition:.22s;position:relative}
 .classe:hover{transform:translateX(6px);border-color:var(--c);box-shadow:-8px 0 24px -12px var(--c)}
 .cl-em{font-size:2.4rem;filter:drop-shadow(0 4px 8px rgba(0,0,0,.7))}
@@ -257,8 +248,6 @@ h2{font-family:'Cinzel';font-weight:700;font-size:1.35rem;color:#e8d5a0;letter-s
 #langbar button.on{color:#f6e6b8;opacity:1}
 #langbar button.on .flag{filter:none}
 body.in-game #langbar{display:none}
-.titre .btn-or.gros{animation:appelBtn 2.6s ease-in-out infinite}
-@keyframes appelBtn{0%,100%{box-shadow:0 0 0 0 rgba(201,162,75,0)}50%{box-shadow:0 0 0 9px rgba(201,162,75,.13)}}
 .ico{width:1.15em;height:1.15em;vertical-align:-.18em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;display:inline-block;flex:none;overflow:visible}
 .jauge .ico{width:.82em;height:.82em;vertical-align:0}
 .stat .ico{width:1.1em;height:1.1em;vertical-align:-.22em}
