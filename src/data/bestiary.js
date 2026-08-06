@@ -11,7 +11,7 @@ pourrissoir:{n:'w.foe.pourrissoir.name',em:"🤮",pv:[18,26],atq:[4,7],cat:"necr
 alguire:{n:'w.foe.alguire.name',em:"🦴",pv:[40,52],atq:[7,11],cat:"necrophage",faib:"igni",txt:'w.foe.alguire.txt',ints:[{n:'w.foe.alguire.i0n',em:"🦷",d:[7,11]},{n:'w.foe.alguire.i1n',em:"🦘",d:[8,12],fx:"poison"},{n:'w.foe.alguire.i2n',em:"🌙",d:[0,0],fx:"peur"}]},
 noyeur:{n:'w.foe.noyeur.name',em:"🧟",pv:[24,32],atq:[5,8],cat:"necrophage",faib:"igni",txt:'w.foe.noyeur.txt',ints:[{n:'w.foe.noyeur.i0n',em:"🪝",d:[5,8]},{n:'w.foe.noyeur.i1n',em:"🪝",d:[5,8]},{n:'w.foe.noyeur.i2n',em:"💧",d:[8,12],fx:"poison"}]},
 goule:{n:'w.foe.goule.name',em:"👹",pv:[28,36],atq:[6,9],cat:"necrophage",faib:"igni",txt:'w.foe.goule.txt',ints:[{n:'w.foe.goule.i0n',em:"🦷",d:[6,9]},{n:'w.foe.goule.i1n',em:"🦷",d:[6,9]},{n:'w.foe.goule.i2n',em:"🩸",d:[9,13]}]},
-nekkere:{n:'w.foe.nekkere.name',em:"👺",pv:[20,26],atq:[4,7],cat:"necrophage",faib:"aard",txt:'w.foe.nekkere.txt',ints:[{n:'w.foe.nekkere.i0n',em:"🪝",d:[4,7]},{n:'w.foe.nekkere.i1n',em:"🦘",d:[7,10]}]},
+nekkere:{n:'w.foe.nekkere.name',em:"👺",pv:[20,26],atq:[4,7],cat:"ogroide",faib:"aard",txt:'w.foe.nekkere.txt',ints:[{n:'w.foe.nekkere.i0n',em:"🪝",d:[4,7]},{n:'w.foe.nekkere.i1n',em:"🦘",d:[7,10]}]},
 loup:{n:'w.foe.loup.name',em:"🐺",pv:[22,30],atq:[5,9],cat:"bete",faib:"axii",txt:'w.foe.loup.txt',ints:[{n:'w.foe.loup.i0n',em:"🦷",d:[5,9]},{n:'w.foe.loup.i1n',em:"🌙",d:[0,0],fx:"peur"}]},
 foglet:{n:'w.foe.foglet.name',em:"🌫️",pv:[30,40],atq:[6,10],cat:"ogroide",faib:"yrden",txt:'w.foe.foglet.txt',ints:[{n:'w.foe.foglet.i0n',em:"🪝",d:[6,10]},{n:'w.foe.foglet.i1n',em:"🗡️",d:[9,14]},{n:'w.foe.foglet.i2n',em:"🌫️",d:[0,0],fx:"brume"}]},
 brigand:{n:'w.foe.brigand.name',em:"🗡️",pv:[20,28],atq:[5,8],cat:"humain",faib:null,txt:'w.foe.brigand.txt',ints:[{n:'w.foe.brigand.i0n',em:"🗡️",d:[5,8]},{n:'w.foe.brigand.i1n',em:"🩸",d:[8,12]}]},
@@ -19,7 +19,7 @@ spectre:{n:'w.foe.spectre.name',em:"👻",pv:[34,44],atq:[7,11],cat:"spectre",fa
 fielon:{n:'w.foe.fielon.name',em:"🦌",pv:[60,74],atq:[9,14],cat:"relique",faib:"aard",epic:true,trophy:'fiend_skull',special:{fx:'devour',n:'w.foe.fielon.sp',em:'🦴'},txt:'w.foe.fielon.txt',ints:[{n:'w.foe.fielon.i0n',em:"💥",d:[10,15]},{n:'w.foe.fielon.i1n',em:"👁️",d:[0,0],fx:"peur"},{n:'w.foe.fielon.i2n',em:"🦶",d:[13,18]}]},
 sylvestre:{n:'w.foe.sylvestre.name',em:"🌲",pv:[66,80],atq:[8,13],cat:"relique",faib:"igni",epic:true,trophy:'leshen_bark',txt:'w.foe.sylvestre.txt',ints:[{n:'w.foe.sylvestre.i0n',em:"🌿",d:[8,12]},{n:'w.foe.sylvestre.i1n',em:"🌿",d:[11,16]},{n:'w.foe.sylvestre.i2n',em:"☠️",d:[7,10],fx:"poison"}]},
 griffon:{n:'w.foe.griffon.name',em:"🦅",pv:[210,210],atq:[12,17],cat:"draconide",faib:"aard",boss:true,vole:true,epic:true,trophy:'griffon_plume',special:{fx:'swoop',n:'w.foe.griffon.sp',em:'🦅'},txt:'w.foe.griffon.txt',intsVol:[{n:'w.foe.griffon.iV0n',em:"🦅",d:[14,19]},{n:'w.foe.griffon.iV1n',em:"📢",d:[6,9],fx:"peur"}],intsSol:[{n:'w.foe.griffon.iS0n',em:"🪝",d:[12,16]},{n:'w.foe.griffon.iS1n',em:"🦷",d:[15,20]},{n:'w.foe.griffon.iS2n',em:"🌪️",d:[8,12],fx:"sonne"}]},
-guerrier_nekker:{n:'w.foe.guerrier_nekker.name',em:"🪓",pv:[50,62],atq:[8,12],cat:"necrophage",faib:"igni",epic:true,trophy:'nekker_crown',special:{fx:'rally',n:'w.foe.guerrier_nekker.sp',em:'📯'},txt:'w.foe.guerrier_nekker.txt',ints:[{n:'w.foe.guerrier_nekker.i0n',em:"🪓",d:[8,12]},{n:'w.foe.guerrier_nekker.i1n',em:"🪓",d:[9,13]},{n:'w.foe.guerrier_nekker.i2n',em:"📢",d:[0,0],fx:"peur"}]}
+guerrier_nekker:{n:'w.foe.guerrier_nekker.name',em:"🪓",pv:[60,72],atq:[8,12],cat:"ogroide",faib:"igni",epic:true,trophy:'nekker_crown',special:{fx:'rally',n:'w.foe.guerrier_nekker.sp',em:'📯'},txt:'w.foe.guerrier_nekker.txt',ints:[{n:'w.foe.guerrier_nekker.i0n',em:"🪓",d:[8,12]},{n:'w.foe.guerrier_nekker.i1n',em:"🪓",d:[9,13]},{n:'w.foe.guerrier_nekker.i2n',em:"📢",d:[0,0],fx:"peur"}]}
 };
 const TROPHIES={
 nekker_crown:{n:'w.trophy.nekker_crown.name',desc:'w.trophy.nekker_crown.desc',voice:'w.trophy.nekker_crown.voice',img:'v_rune',bonus:{armorStart:2}},
@@ -36,7 +36,7 @@ function pickRencontre(c,type){
    {foes:['fielon','nekkere','nekkere'],lead:'fielon'},
    {foes:['sylvestre','loup','loup'],lead:'sylvestre'},
    {foes:['alguire','goule','goule'],lead:'alguire'},
-   {foes:['fielon','pourrissoir','pourrissoir'],lead:'fielon'}
+   {foes:['fielon','nekkere','pourrissoir'],lead:'fielon'}
   ]);
  }
  let pool;
@@ -46,7 +46,7 @@ function pickRencontre(c,type){
    {foes:['chien','chien'],lead:'chien'},
    {foes:['loup','loup'],lead:'loup'},
    {foes:['nekkere','nekkere'],lead:'nekkere'},
-   {foes:['noyeur'],lead:'noyeur'}
+   {foes:['noyeur','noyeur'],lead:'noyeur'}
   ];
  }else if(c<=4){
   pool=[
