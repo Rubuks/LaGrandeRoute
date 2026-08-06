@@ -273,20 +273,19 @@ body.in-game #langbar{display:none}
 .jauge .ico{width:.82em;height:.82em;vertical-align:0}
 .stat .ico{width:1.1em;height:1.1em;vertical-align:-.22em}
 @media (min-width:560px){body{font-size:17.5px}}
-/* --- Combat : un seul écran, contrôles compacts, portraits conservés --- */
-.ecran.combat{display:flex;flex-direction:column;gap:.3rem;height:calc(100dvh - 110px);padding-top:.2rem;overflow:hidden}
+/* --- HUD 2 lignes + combat sans chevauchement --- */
+#hud{flex-wrap:wrap;row-gap:.3rem}
+.hud2{flex-basis:100%;display:flex;flex-wrap:wrap;gap:.25rem;align-items:center}
+.pa-mini{font-family:'Cinzel';font-weight:900;color:var(--or);font-size:.78rem;letter-spacing:.06em;margin-right:.15rem}
+.mini-chip{font-size:.55rem;padding:.05rem .42rem;border-radius:10px}
+.ecran.combat{display:flex;flex-direction:column;gap:.3rem;height:calc(100dvh - 124px);padding-top:.2rem;overflow:hidden}
 .ecran.combat .zone-ennemi{padding:.2rem .2rem .3rem;min-height:0}
-.ecran.combat .journal{flex:1 1 auto;min-height:40px;overflow-y:auto;font-size:.76rem;line-height:1.35;padding:.3rem .2rem;margin:.15rem 0}
-.ecran.combat .zone-heros{padding:.3rem .2rem .1rem}
-.ecran.combat .pa{font-size:.95rem}
-.ecran.combat .zone-heros .jauge{max-width:none;height:13px;margin:.25rem 0 0}
-.ecran.combat .chips{margin-top:.25rem;min-height:0;gap:.2rem}
-.ecran.combat .chip{font-size:.62rem;padding:.08rem .45rem}
-.ecran.combat .actions{grid-template-columns:repeat(4,1fr);gap:.3rem;margin-top:.4rem}
-.btn.act{padding:.42rem .15rem;font-size:.56rem;line-height:1.15}
+.ecran.combat .journal{flex:1 1 auto;min-height:38px;overflow-y:auto;font-size:.72rem;line-height:1.35;padding:.25rem .2rem;margin:.1rem 0}
+.ecran.combat .zone-heros{padding:.25rem .15rem .1rem}
+.ecran.combat .actions{grid-template-columns:repeat(4,1fr);gap:.3rem;margin-top:.35rem}
+.btn.act{padding:.45rem .15rem;font-size:.56rem;line-height:1.15}
 .btn.act small{font-size:.46rem;letter-spacing:.05em;margin-top:.08rem}
-.btn.act .ico{width:1em;height:1em}
-.ecran.combat .signes{gap:.35rem;margin-top:.35rem}
+.ecran.combat .signes{gap:.35rem;margin-top:.3rem}
 .signe{width:48px;height:48px;font-size:1.05rem}
 .signe small{font-size:.42rem}
 .ecran.combat .objets{gap:.3rem;margin-top:.3rem;max-height:112px;overflow-y:auto}
