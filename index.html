@@ -231,8 +231,8 @@ h2{font-family:'Cinzel';font-weight:700;font-size:1.35rem;color:#e8d5a0;letter-s
 .pw>img.x{display:none}
 .pw>.fb{display:none;line-height:1}
 .pw>img.x~.fb{display:inline}
-.pw.bestiole{width:clamp(112px,32vw,158px);height:clamp(140px,40vw,198px);border-radius:18px;box-shadow:0 16px 26px rgba(0,0,0,.72);border:1px solid #4a3a20}
-.pw.bestiole .fb{font-size:clamp(68px,20vw,96px)}
+.pw.bestiole{width:clamp(120px,32vw,168px);height:clamp(140px,40vw,198px);border-radius:18px;box-shadow:0 16px 26px rgba(0,0,0,.72);border:1px solid #4a3a20}
+.pw.bestiole .fb{font-size:clamp(75px,20vw,106px)}
 .pw.cl-em{width:clamp(88px,26vw,112px);height:clamp(110px,33vw,140px);border-radius:14px;box-shadow:0 6px 16px rgba(0,0,0,.65);border:1px solid #44351d}
 .pw.cl-em .fb{font-size:3.2rem}
 .pw.med{width:38px;height:46px;border-radius:10px;box-shadow:0 0 6px rgba(201,162,75,.5)}
@@ -273,6 +273,23 @@ body.in-game #langbar{display:none}
 .jauge .ico{width:.82em;height:.82em;vertical-align:0}
 .stat .ico{width:1.1em;height:1.1em;vertical-align:-.22em}
 @media (min-width:560px){body{font-size:17.5px}}
+/* --- Combat : un seul écran, contrôles compacts, portraits conservés --- */
+.ecran.combat{display:flex;flex-direction:column;gap:.3rem;height:calc(100dvh - 110px);padding-top:.2rem;overflow:hidden}
+.ecran.combat .zone-ennemi{padding:.2rem .2rem .3rem;min-height:0}
+.ecran.combat .journal{flex:1 1 auto;min-height:40px;overflow-y:auto;font-size:.76rem;line-height:1.35;padding:.3rem .2rem;margin:.15rem 0}
+.ecran.combat .zone-heros{padding:.3rem .2rem .1rem}
+.ecran.combat .pa{font-size:.95rem}
+.ecran.combat .zone-heros .jauge{max-width:none;height:13px;margin:.25rem 0 0}
+.ecran.combat .chips{margin-top:.25rem;min-height:0;gap:.2rem}
+.ecran.combat .chip{font-size:.62rem;padding:.08rem .45rem}
+.ecran.combat .actions{grid-template-columns:repeat(4,1fr);gap:.3rem;margin-top:.4rem}
+.btn.act{padding:.42rem .15rem;font-size:.56rem;line-height:1.15}
+.btn.act small{font-size:.46rem;letter-spacing:.05em;margin-top:.08rem}
+.btn.act .ico{width:1em;height:1em}
+.ecran.combat .signes{gap:.35rem;margin-top:.35rem}
+.signe{width:48px;height:48px;font-size:1.05rem}
+.signe small{font-size:.42rem}
+.ecran.combat .objets{gap:.3rem;margin-top:.3rem;max-height:112px;overflow-y:auto}
 </style>
 </head>
 <body>
