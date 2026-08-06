@@ -278,7 +278,7 @@ body.in-game #langbar{display:none}
 .hud2{flex-basis:100%;display:flex;flex-wrap:wrap;gap:.25rem;align-items:center}
 .pa-mini{font-family:'Cinzel';font-weight:900;color:var(--or);font-size:.78rem;letter-spacing:.06em;margin-right:.15rem}
 .mini-chip{font-size:.55rem;padding:.05rem .42rem;border-radius:10px}
-.ecran.combat{display:flex;flex-direction:column;gap:.3rem;height:calc(100dvh - 124px);padding-top:.2rem;overflow:hidden}
+.ecran.combat{display:flex;flex-direction:column;gap:.3rem;height:calc(100dvh - 124px);padding-top:.2rem;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch}
 .ecran.combat .zone-ennemi{padding:.2rem .2rem .3rem;min-height:0}
 .ecran.combat .journal{flex:1 1 auto;min-height:38px;overflow-y:auto;font-size:.72rem;line-height:1.35;padding:.25rem .2rem;margin:.1rem 0}
 .ecran.combat .zone-heros{padding:.25rem .15rem .1rem}
@@ -291,6 +291,9 @@ body.in-game #langbar{display:none}
 .ecran.combat .objets{gap:.3rem;margin-top:.3rem;max-height:112px;overflow-y:auto}
 .ecran.combat .zone-ennemi{flex:0 0 auto}
 .ecran.combat .zone-heros{flex:0 0 auto}
+/* --- Fix scroll inventaire --- */
+.ecran.combat{overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch}
+.ecran.combat .objets{max-height:none;overflow:visible}
 </style>
 </head>
 <body>
