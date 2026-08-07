@@ -496,5 +496,13 @@ registerLocale('en',
  "w.foe.foglet.i2n": "Mist form",
  "w.log.intangible": "🌫️ {n} melts into the mist — intangible!",
  "w.log.intangibleBreak": "✦ {n} is torn from the mist — vulnerable!",
+ "w.quest.pendu.name": "The hanged one",
+ "w.quest.pendu.txt": "A woman swings at the gallows, accused of a crime she did not commit. Her body deserves a grave — but touching a hanged one brings ill luck, or so they say.",
+ "w.quest.pendu.btn": "Cut the body down (+1 fame)",
+ "w.quest.pendu.done": "The body rests in peace beneath the trees. The villagers will remember.",
+ "w.quest.pendu.spectre": "👻 A pale shape rises from the mist — the hanged woman's features, twisted by grudge!",
+ "w.quest.baron.name": "The baron's herald",
+ "w.quest.baron.txt": "A rider in livery nails an edict to the gate: « The baron summons an experienced hunter. A prey of another kind stalks the land — a manhunt is open. »",
+ "w.act2.teaser": "The local baron seeks an experienced hunter. Whispers speak of a manhunt — that will be the business of Act II.",
 }
 );
