@@ -30,8 +30,10 @@ fiend_skull:{n:'w.trophy.fiend_skull.name',desc:'w.trophy.fiend_skull.desc',voic
 const CATNOMS={necrophage:'w.cat.necrophage',spectre:'w.cat.spectre',bete:'w.cat.bete',ogroide:'w.cat.ogroide',relique:'w.cat.relique',draconide:'w.cat.draconide',humain:'w.cat.humain'};
 const HUILES={necrophage:'w.oil.necrophage',spectre:'w.oil.spectre',bete:'w.oil.bete',draconide:'w.oil.draconide'};
 function pickRencontre(c,type){
- if(type==='taniere'){
-  if(c<=4||Math.random()<0.4)return{foes:['guerrier_nekker','nekkere','nekkere'],lead:'guerrier_nekker'};
+if(type==='taniere'){
+ if(c<=3)return{foes:['guerrier_nekker','nekkere','nekkere'],lead:'guerrier_nekker'};
+ if(c<=7)return{foes:['sylvestre','loup','loup'],lead:'sylvestre'};
+ if(c<=9)return{foes:['fielon','goule','pourrissoir'],lead:'fielon'};
   return pick([
    {foes:['fielon','nekkere','nekkere'],lead:'fielon'},
    {foes:['sylvestre','loup','loup'],lead:'sylvestre'},
