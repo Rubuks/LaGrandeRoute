@@ -504,5 +504,7 @@ registerLocale('fr',
  "w.quest.baron.name": "Le héraut du baron",
  "w.quest.baron.txt": "Un cavalier en livrée cloue un édit à la porte : « Le baron mande un chasseur expérimenté. Une proie d'un autre genre rôde — une chasse à l'homme est ouverte. »",
  "w.act2.teaser": "Le baron local cherche un chasseur expérimenté. On murmure qu'une chasse à l'homme se prépare — ce sera l'affaire de l'Acte II.",
+ "w.quest.pendu.spectreTitle": "La défunte du gibet",
+ "w.quest.pendu.intro": "Au détour du chemin, la brume se fige. Une silhouette blême t'attend — les traits de la femme que tu as laissée au gibet. Elle ne cherche pas vengeance : elle cherche une sépulture. Mais les morts qu'on oublie ne savent que frapper.",
 }
 );
