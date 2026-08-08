@@ -504,5 +504,7 @@ registerLocale('en',
  "w.quest.baron.name": "The baron's herald",
  "w.quest.baron.txt": "A rider in livery nails an edict to the gate: « The baron summons an experienced hunter. A prey of another kind stalks the land — a manhunt is open. »",
  "w.act2.teaser": "The local baron seeks an experienced hunter. Whispers speak of a manhunt — that will be the business of Act II.",
+ "w.quest.pendu.spectreTitle": "The hanged one",
+ "w.quest.pendu.intro": "At the bend of the road, the mist freezes. A pale shape waits for you — the features of the woman you left on the gallows. She does not seek vengeance: she seeks a grave. But the forgotten dead only know how to strike.",
 }
 );
