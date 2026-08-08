@@ -141,5 +141,7 @@ registerLocale('en',
  "ui.best.atk": "Attack",
  "ui.best.fly": "🪽 flies",
  "ui.chips.intangible": "🌫️ incorporeal", 
+ "ui.village.fameMalus": " (ill repute : +",
+ "ui.village.stockLow": "The merchant keeps part of his stock for trustworthy folk.",
 }
 );
