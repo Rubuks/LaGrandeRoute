@@ -141,5 +141,7 @@ registerLocale('fr',
  "ui.best.atk": "Attaque",
  "ui.best.fly": "🪽 vole",
  "ui.chips.intangible": "🌫️ intangible", 
+ "ui.village.fameMalus": " (mauvaise réputation : +",
+ "ui.village.stockLow": "Le marchand garde une partie de sa réserve pour les gens de confiance.",
 }
 );
